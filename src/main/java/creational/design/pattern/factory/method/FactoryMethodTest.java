@@ -3,8 +3,11 @@ package creational.design.pattern.factory.method;
 public class FactoryMethodTest {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
+		BasePizzaFactory pizzaFactory = new PizzaFactory();
+		
+		Pizza cheesePizza = pizzaFactory.createPizza("cheese");
+		Pizza veggiePizza = pizzaFactory.createPizza("veggie");
 	}
 
 }
